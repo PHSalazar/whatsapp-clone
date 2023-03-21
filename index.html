@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/index.css">
+  <title>WhatsApp Clone - Pedro salazar</title>
+</head>
+
+<body>
+
+  <div id="container">
+    <div id="header">
+      <div id="header-line1">
+        <h2>WhatsApp</h2>
+        <input type="text" id="input-search" placeholder="Pesquisar">
+        <div class="header-right">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAABCNJREFUeF7tmVuoZmMYx39/hyFKOZ9KTDnmcDUXjENjLuRCImqYiRo3LiQxpriQhAtmkhS5IIYhcYEkFMrI8cYpiaK5kMOEQS4Ifz31rnpbe397f2utd31Zfeu52u39Ps/7vL/3Obzr2WLORXN+fkYAYwTMOYExBeY8AMYiOKbAmAJzTmBMgTkPgLELjCkwpsCMCNg+DTgBOArYH/gB+B54X9LPM3JjwTa9poDto4EbgUuBYycc8m9gB7ANeELSP7OE0QsA2/sAtwE3APs1ONBnoSPp9QY6nZYWB2D7EOA54LyWnhm4Q9LtLfUbqRUFYPtw4F3guJoXu4EXgVeBncDvwBFA1IWLgbNhQUveKmlTo9O0WFwMQAr7N4CzMj8in+8D7pb0yyT/bJ8J3A+sqq25RtKjLc41tUpJAHcBt2Y7xy2vk/TyNN4kgA8DV2fr/wROlvTNNDbarCkCwHa0tq+ygvdvhLakl5o4ZTv8eQa4PNN7WtKVTew0WVsKwNbU7qq9t0i6uYkj1VrbBwBfAlFPQqIonigpABeXUgAiRKs+HwVv5VI5v9wpbF8HPJCt2yzp3uX02vy9M4D0wvsk23ybpDyPG/tl+8D0Utw7Ke+QdG5jQ1MolABwGfBsttd6SU9NsfeSS2y/DaxOi3ZJOqyrzcX0SwC4PrWwyv5qSe90ddb2k8D6rA7sK+mvrnbr+iUA3BJ9PjN8hqQ8JVr5bPsh4NpM+eA+PppKANgIPJI5eoGk11qdOlOy/Xx6JcZv40G1QlK016JSAsCFQP7Y2SQp2mInsf119qTeKWnS12SnfUoAOChV7L1KVWzbpwMfZyfbLmlDp5NOUO4MIOzajm+ANVnBikIYH0WtpFYAw8YGSdtbGVtGqRSA6PuPZXt9CJwjKd7yjcR29Ps3gT2S4o/AMW1sTbNxKQB7Ah8Bp2abPg5sbFK4bK8E3gMOzewUqSmTYBQBkNJgbfreDxiVvABcJem35W4j3Xw8qPIHT0BdJSnGZr1IMQAJQnwA3VPzNIafdwJRyBbMBFLB2wxckYV9ZSLCf62kGJX1IkUBJAhbgJsW8TZu8QMg2tsfwJEpZSLsl5JeIRQHkCDE4+hBIIajTSXCPuYLeSr0BqEXAAlCzAVjSrRukXnfYlAiVeKTN0ZjJwExGe4dQm8AqhPaPh64BLgIiJ+rQUc8b78F3gJeiUly3upsR0fpHULvAOpXbXtF+s/Qbkkx7Zkos4AwcwBNC4LtSId4aUbRrGRX6g6fNrVXX/+/B5DqyaR0WCPp8y4QBgEgQahHwhfA+ZK+mwsANQi/ljh82BxMBGRd5RTgJ0nRNjvL4AB0PnHNwAigNNGh2RsjYGg3VtrfMQJKEx2avTEChnZjpf0dI6A00aHZGyNgaDdW2t8xAkoTHZq9uY+A/wBXLTJQPgy8aAAAAABJRU5ErkJggg==" id="btn-search" width="32px" height="32px" style="cursor: pointer;" />
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAbpJREFUeF7tWrtNA0EUnEkgAVGAWwBBBNg1QAMUAAGfXkCCADmkBKgBkwAStAAFABHJohN7oc2z9jRac+PwNHs7b97s+ml0RM9/7Hn9sAB2QM8V8BFQGyCltAzgCMABgPW8/yuAGwDXJL+VnKQOSCkNANwB2JxS5DOAPZJvKhFkAuTOP8wovq35CcCuyglKAc4AnAc7e0LyMogtgikFaLq/HWQ7ITkMYotgSgE+AawE2X6RXA1ii2C1CvBBcq2osuBipQATADtBXvckR0FsEUwpwCmAiyDbY5JXQWwRTClAMwA1Ltj6g/EjgOG/+xtsis6D0O0MEZri90m+F7V1jsUyB7ScUkpLAA7zKLyRn7/kUXis6nzLRy7AHM2RQC2AROaKN7EDKm6OhJodIJG54k3sAHVznAk6E5waiLZmdCYIwJmgM0Fngs4EnQkqZhTZJJgHIGeCAJwJOhNUHO7gHrI7IMhHDrMAcskr29AOqKwhcjp2gFzyyjaUO8CZoDNBZ4KRW8CZoDNBZ4LOBJ0JRm7LUoxsEHIm6O8Ef83q7wRLD23H62V3QMe8O3udBehMygV9kR2woI3rjPYPW9PMQcXNYEsAAAAASUVORK5CYII=" id="btn-menu" width="24px" height="24px" style="cursor: pointer;" />
+        </div>
+      </div>
+
+      <div id="header-line2">
+        <img src="data:image/png;base64,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" width="24px" height="24px" id="btn-groups">
+        <span class="tab-active">Conversas</span>
+        <span>Chamadas</span>
+        <span>Status</span>
+      </div>
+    </div>
+
+    <div id="chats"></div>
+
+    <div id="fab"></div>
+  </div>
+
+  <!-- Script -->
+  <script src="./assets/index.js"></script>
+</body>
+
+</html>
