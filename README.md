@@ -16,7 +16,7 @@ Escolhi desenvolver esse projeto para aprimorar meus conhecimentos em HTML (alin
 # Contato
 
 **Portfolio**
-- https://phsalazar.github.io/portfolio/
+- https://phsalazar.github.io/portfolio2024/
 
 **LinkedIn**
 - https://www.linkedin.com/in/pedro-henrique-salazar/
